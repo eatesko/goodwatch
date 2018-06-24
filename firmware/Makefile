@@ -9,6 +9,7 @@ RNG_APP = 1
 TUNER_APP = 1
 MORSE_APP = 1
 BEACON_APP = 1
+DMESG_APP = 1
 OOK_APP = 1
 COUNTER_APP = 1
 VOLTAGE_APP = 1
@@ -57,6 +58,10 @@ endif
 ifeq ($(BEACON_APP),1)
 APPS_OBJ += apps/beacon.o
 APPS_DEFINES += BEACON_APP 
+endif
+ifeq ($(DMESG_APP),1)
+APPS_OBJ += apps/dmesgapp.o
+APPS_DEFINES += DMESG_APP 
 endif
 ifeq ($(OOK_APP),1)
 APPS_OBJ += apps/ook.o

@@ -95,6 +95,13 @@ const struct app subapps[]={
    .packetrx=beacon_packetrx, .keypress=beacon_keypress
   },
 #endif
+#ifdef DMESG_APP
+  //Beacon
+  {.name="dmesgapp",
+   .init=dmesgapp_init, .draw=dmesgapp_draw, .exit=dmesgapp_exit,
+   .packettx=dmesgapp_packettx, .keypress=dmesgapp_keypress
+  },
+#endif
 #ifdef OOK_APP
   //OOK
   {.name="OOK",

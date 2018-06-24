@@ -19,6 +19,7 @@
 #include "apps/morse.h"
 #include "apps/tuner.h"
 #include "apps/beacon.h"
+#include "apps/dmesgapp.h"
 #include "apps/ook.h"
 #include "apps/counter.h"
 
